@@ -1,0 +1,291 @@
+*{
+
+  /* ---- VARIABLES ---- */
+  --color-primary-1: #dce1eb;
+  --color-primary-2: #c6ac86;
+  --color-dark: #202528;
+  --color-info: #7d8da1;
+  --color-background: #181a1e;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.6rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 0.6rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.primary-color-1{
+  color: var(--color-primary-1);
+}
+
+.primary-color-2{
+  color: var(--color-primary-2);
+}
+
+.color-dark{
+  color: var(--color-dark);
+}
+
+.color-info{
+  color: var(--color-info);
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #181a1e !important;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: #c6ac86 !important;
+}
+
+.content {
+  padding: 7rem 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.half,
+.half .container>.row {
+  height: 100vh;
+  min-height: 700px;
+}
+
+@media (max-width: 991.98px) {
+  .half .bg {
+    height: 300px;
+  }
+}
+
+.half .contents {
+  background: #211b16;
+}
+
+.half .contents,
+.half .bg {
+  width: 50%;
+}
+
+@media (max-width: 1199.98px) {
+
+  .half .contents,
+  .half .bg {
+    width: 100%;
+  }
+}
+
+.half .contents .form-control,
+.half .bg .form-control {
+  border: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 54px;
+  background: #fff;
+}
+
+.half .contents .form-control:active,
+.half .contents .form-control:focus,
+.half .bg .form-control:active,
+.half .bg .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.half .bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.half a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.half .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.half .forgot-pass {
+  position: relative;
+  top: 2px;
+  font-size: 14px;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.control .caption {
+  position: relative;
+  top: .2rem;
+  color: #888;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #cdcdcd;
+  border-radius: 4px;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+.control:hover input~.control__indicator,
+.control input:focus~.control__indicator {
+  background: #cdcdcd;
+}
+
+.control input:checked~.control__indicator {
+  background: #e0ae66;
+}
+
+.control:hover input:not([disabled]):checked~.control__indicator,
+.control input:checked:focus~.control__indicator {
+  background: #e0ae66;
+}
+
+.control input:disabled~.control__indicator {
+  background: #cdcdcd;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.control__indicator:after {
+  font-family: 'icomoon';
+  content: '\e5ca';
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.control input:checked~.control__indicator:after {
+  display: block;
+  color: #cdcdcd;
+}
+
+.control--checkbox .control__indicator:after {
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.control--checkbox input:disabled~.control__indicator:after {
+  border-color: #7b7b7b;
+}
+
+.control--checkbox input:disabled:checked~.control__indicator {
+  background-color: #7e0cf5;
+  opacity: .2;
+}
+
+.email {
+  
+  outline: none;
+  padding: 8px 20px 8px 20px;
+  width: 440px;
+  background-color: #211b1600;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white
+
+}
+
+
+
+.email::placeholder {
+  color: white
+}
+
+.email:focus {
+  border-color: #ce913a;
+}
+
+.email-button {
+  margin-left: 50px;
+  padding: 8px 45px;
+  background: none;
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+  transition: 1s ease;
+  cursor: pointer;
+  width: 300px;
+}
+
+.email-button:hover {
+  background-color: white;
+  border-color: #ce913a;
+  color: #ce913a;
+}
+
+.email-button:focus {
+  outline: none;
+}
+
+.form-field{
+  background-color: var(--color-dark);
+  border: none;
+}
+
+.backBtn{
+  color: white;
+  border: #c6ac86 1px solid;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: #c6ac86;
+}
+
+.backBtn:hover{
+  transition: 1s ease;
+  background-color: white;
+  border-color: #ce913a;
+  color: #ce913a;
+  cursor: pointer;
+}

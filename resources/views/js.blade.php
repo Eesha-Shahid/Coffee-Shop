@@ -1,0 +1,10 @@
+<script src="{{ asset(js/login.js)"></script>
+<script src="{{ asset(js/bootstrap.min.js)"></script>
+<script src="{{ asset(js/jQuery.slim.min.js)"></script>
+<script src="{{ asset(js/jquery.min.js)"></script>
+<script src="{{ asset(js/bootstrap.bundle.min.js)"></script>
+<script src="{{ asset(js/sb-admin-2.min.js)"></script>
+<script src="{{ asset(js/datatables-demo.js)"></script>
+<script src="{{ asset(js/jquery.dataTables.min.js)"></script>
+<script src="{{ asset(js/dataTables.bootstrap4.min.js)"></script>
+<script src="https://kit.fontawesome.com/5e8b9def84.js" crossorigin="anonymous"></script>

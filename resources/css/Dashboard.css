@@ -1,0 +1,182 @@
+*{
+
+    /* ---- VARIABLES ---- */
+    --color-primary-1: #dce1eb;
+    --color-primary-2: #c6ac86;
+    --color-dark: #202528;
+    --color-info: #7d8da1;
+    --color-background: #181a1e;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.6rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 0.6rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+  
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.dashboard-color , #content, .navbar{
+    background-color: var(--color-background) !important;
+}
+
+.bg-primary{
+    background-color: var(--color-dark) !important;
+    background-image: linear-gradient(180deg, #c0a074 10%, #d5a663 100%);
+}
+
+.togglebtn{
+    color : #e0ae66;
+}
+
+.togglebtn:hover{
+    background-color: #fff9f0 !important; 
+}
+
+.togglebtn:active{
+    background-color: #fff2df !important; 
+}
+
+.togglebtn:focus{
+    box-shadow: none;
+}
+.togglebtn i{
+    color: #e0ae66 ;
+}
+
+.bg-dark{
+    background-color: #191410 !important;
+}
+
+.border-left-primary{
+    border: none !important; 
+    background-color: #211b16;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.border-left-primary:hover{
+    cursor: pointer;
+}
+
+/* ---- Card ----- */
+
+.card{
+    border: none;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-3) !important;
+}
+
+.card:hover{
+    box-shadow: none;
+    transition: all 300ms ease;
+}
+
+.card-header{
+    background-color: var(--color-dark);
+    border: none;
+}
+
+.box-shadow{
+    box-shadow: var(--box-shadow) !important;
+}
+
+.card-body{
+    background-color: var(--color-dark) !important;
+    border-radius: var(--border-radius-3);
+}
+
+.dropdown-item:hover > i , .dropdown-item:hover {
+    color: #211b16 !important;
+}
+
+
+.page-item.active .page-link{
+    background-color: #c0a074 !important;
+    border-color: #c0a074;
+    color: white;
+}
+.page-link{
+    color: #c0a074;
+}
+
+.page-link:hover{
+    color: #c0a074;
+    background-color: #fff7eb;
+
+}
+
+.page-link:focus{
+    box-shadow: none;
+}
+
+.btn-remove {
+    display: inline-block;
+    position: relative;
+    color: #c0a074;
+    background: transparent;
+    border: none;
+  }
+  
+  .btn-remove:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e0ae66;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .btn-remove:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.status{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.status:focus-visible{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+option{
+    background-color: #211b16;
+}
+
+.product-options:hover{
+    text-decoration: none;
+}
+
+input[type=file]::file-selector-button {
+    border :none;
+    background-color:transparent;
+    transition: 1s;
+    color: #c0a074;
+  }
+
+  input[type=file]::file-selector-button:hover {
+    color: #e0ae66;
+    cursor: pointer;
+  }
+
+  .email{
+    width: 50%;
+  }
+
+  select::-ms-expand {
+    display: block;
+}

@@ -1,0 +1,65 @@
+*{
+
+    /* ---- VARIABLES ---- */
+    --color-primary-1: #dce1eb;
+    --color-primary-2: #c6ac86;
+    --color-dark: #202528;
+    --color-info: #7d8da1;
+    --color-background: #181a1e;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.6rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 0.6rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+  
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: #181a1e !important;
+}
+
+/* ---- Navbar ---- */
+
+.navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  #logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  
+  .navbar-brand {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+.map {
+    background: url(/images/Other/map.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.img-main{
+    background: url(/images/Other/menu.jpg) no-repeat fixed right;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.email{
+  background-color: var(--color-dark);
+  border: none;
+}

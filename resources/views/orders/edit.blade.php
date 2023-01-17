@@ -1,0 +1,67 @@
+@extends('orders.layout')
+   
+@section('content')
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2>Edit Order</h2>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('orders.index') }}"> Back</a>
+            </div>
+        </div>
+    </div>
+   
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+  
+    <form action="{{ route('orders.update',$order->id) }}" method="POST">
+        @csrf
+        @method('PUT')
+   
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Name:</strong>
+                    <input type="text" name="account_name" value="{{ $order->account_name }}" class="form-control" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Phone:</strong>
+                    <input type="text" name="account_phone" value="{{ $order->account_phone }}" class="form-control" placeholder="Phone">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Address:</strong>
+                    <input type="text" name="account_address" value="{{ $order->account_address }}" class="form-control" placeholder="Address">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Detail:</strong>
+                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $order->detail }}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Total:</strong>
+                    <input type="text" name="total" value="{{ $order->total }}" class="form-control" placeholder="Total">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+   
+    </form>
+@endsection

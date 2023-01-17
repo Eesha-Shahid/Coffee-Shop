@@ -1,0 +1,55 @@
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;   
+}
+
+
+body {
+    background: #181a1e !important;
+}
+
+.order{
+    background-color: #202528;
+    min-height: 400px;
+    border-radius: 20px;
+    padding: 25px 0;
+}
+
+.email{
+    background-color: var(--color-dark);
+    border: none;
+}
+
+.tbl{
+    table-layout:fixed;
+    word-break:break-all;
+    border: none;
+}
+
+.tblProduct{
+    width: 80%;
+    text-align: left;
+}
+
+.tblSubtotal{
+    width: 20%;
+    text-align: right;
+}
+
+tr{
+    height: 50px;
+    border-bottom:  1px solid #959595;
+}
+
+@media only screen and (max-width: 991px) {
+    .tblProduct{
+    width: 70%;
+}
+
+.tblSubtotal{
+    width: 30%;
+}
+  }
+  
